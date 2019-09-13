@@ -1,0 +1,12 @@
+default: &default
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  pool:     30
+  template: template0
+
+development:
+  <<: *default
+  username: test_user
+  password: qwerty
+  database: mayor_organizer
